@@ -1,0 +1,136 @@
+*{margin: 0;padding: 0;}
+.box,.head,.denger,.foot{
+    width: 990px;
+}
+.head{
+    height: 100px;
+    margin: 0 auto;
+}
+.head>img{
+    height: 100px;
+    float: left;
+}
+.head>.hy{
+    font-size: 24px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 35px;
+}
+.head>.wj{
+    float: right;
+    font-size: 12px;
+    color: slategray;
+    margin-top: 75px;
+}
+.head>.wj>a{
+    text-decoration: none;
+    color: slategray;
+}
+.head>.wj>a>.glyphicon-comment{
+    font-size: 16px;
+    color: red;
+}
+.dang{
+    width: 100%;
+    background: #fff8f0;
+}
+.denger{
+    height: 40px;
+    background: #fff8f0;
+    margin: 0 auto;
+    line-height: 40px;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+}
+.bbox{
+    width: 100%;
+    background: #e93854;
+}
+.box{
+    height: 475px;
+    background:url(../images/dlbj.png);
+    margin: 0 auto;
+}
+.box>.input{
+    width: 350px;
+    height: 430px;
+    background: white;
+    float: right;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+.box>.input>span:nth-child(1){
+    width: 350px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #999;
+    font-size: 12px;
+    background: #fff8f0;
+    display: block;
+}
+.box>.input>.body>.dlzc>.ulfirst{
+    width: 350px;
+    height: 40px;
+    border-top: 1px solid #bdbdbd;
+    border-bottom: 1px solid #bdbdbd;
+}
+.box>.input>.body>.dlzc>.ulfirst>li{
+    list-style: none;
+    font-size: 24px;
+    color: black;
+    line-height: 40px;
+}
+.box>.input>.body>.dlzc>.ulfirst>li:nth-child(1){
+    margin-left: 35px;
+    float: left;
+}
+.box>.input>.body>.dlzc>.ulfirst>li:nth-child(2){
+    margin-right: 35px;
+    float: right;
+}
+.box>.input>.body>.dlzc>.ulfirst>li>a{
+    color: black;
+    text-decoration: none;
+}
+.box>.input>.body>.dlzc>.ulfirst>li:hover a{
+    color: gray;
+    text-decoration: none;
+}
+.box>.input>.body>.inp{
+    font-size: 16px;
+    float: left;
+    margin-left: 45px;
+    margin-top: 40px;
+    display: none;
+}
+.box>.input>.body>.inp>span{
+    font-size: 16px;
+    float: left;
+    margin-left: 50px;
+    color: red;
+    display: none;
+}
+.box>.input>.body>.inp>.inp2,.inp4{
+    margin-top: 20px;  
+}
+.box>.input>.body>.inp>button{
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+    float: left;
+    background: #e93854;
+    margin-left: 10px;
+    margin-top: 90px;
+    border: none;
+    color: white;
+}
+.foot{
+    height: 130px;
+    margin: 0 auto;
+    text-align: center;
+}
+.foot>p{
+    padding-top: 10px;
+}

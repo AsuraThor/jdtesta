@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东商城登陆注册界面</title>
+    <link rel="stylesheet" href="../lib/font/iconfont.css">
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="head">
+        <img src="../images/jdlogo.jpg" />
+        <span class="hy">欢迎登陆</span>
+        <span class="wj">
+            <a href=""><span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+            登陆页面,调查问卷
+            </a>
+        </span>
+    </div>
+    <div class="dang">
+    <div class="denger">
+        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+        依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！ 新版《京东隐私政策》已上线，将更有利于保护您的个人隐私。
+    </div>
+    </div>
+    <div class="bbox">
+    <div class="box">
+        <div class="input">
+            <span>
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                京东不会以任何理由要求您转账汇款，谨防诈骗。
+            </span>
+            <div class="body">
+                <div class="dlzc">
+                    <ul id="ulfirst" class="ulfirst">
+					    <li class="active"><a href="#">账号注册</a></li>
+					    <li><a href="#">用户登录</a></li>
+				    </ul>
+                </div>
+                <div class="inp" style="display: block;">
+                    <span style="display: none;">用户名或密码错误</span><br />
+                    账号：<input type="text" placeholder="账号由五位以上字母组成" value="" class="inp1"/><br /><br />
+                    密码：<input type="text" placeholder="密码由六位数字组成" value="" class="inp2"/><br />
+                    <button class="zc">注册</button>
+                </div>
+                <div class="inp">
+                    <span>用户名或密码错误</span><br />
+                    账号：<input type="text" placeholder="请输入您的账号" value="" class="inp3"/><br /><br />
+                    密码：<input type="text" placeholder="请输入密码" value="" class="inp4"/><br />
+                    <button class="pass">登陆</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="foot">
+        <p>Copyright © 2004-2020  京东JD.com 版权所有</p>
+        <p>客服热线：400-838-5616  举报电话：400-838-5616  《举报受理和处置管理办法》</p>
+        <p>地址：上海市浦东新区张江丹桂路799号国创中心三期1-2号楼 </p>
+    </div>
+</body>
+<script type="text/javascript">
+    window.onload = function(){
+    let ulfirst = document.getElementById('ulfirst');
+    let lifir = ulfirst.getElementsByTagName('li');
+    for (let i = 0; i < 2; i++) {
+        lifir[i].index = i;
+        lifir[i].setAttribute('myindex', i);
+
+        lifir[i].onclick = function() {
+            for (let j = 0; j < lifir.length; j++) {
+                lifir[j].className = '';
+            }
+            this.className = 'active';
+
+            let boxs = document.getElementsByClassName('inp');
+            let box = boxs[this.index];
+            for (let l = 0; l < boxs.length; l++) {
+                boxs[l].style.display = 'none';
+            }
+            box.style.display = 'block';
+        }
+    }}
+
+    //获取账号密码
+    let zc = document.querySelector('.zc');
+    zc.onclick = function(){
+        let admin = document.querySelector('.inp1').value;
+        let password = document.querySelector('.inp2').value;
+
+        //判断非空
+        if (!admin || !password) {
+        alert('请按照合法格式填写注册信息');
+        return
+        }
+
+        //表单验证
+        var res = 0;
+        var x1 = /^[a-zA-Z][a-zA-Z0-9_]{4,999}$/.test(admin);
+			if(!x1){
+                alert('您输入的账号格式不正确');
+                res += 1;
+			}
+        var x2 = /^[0-9]{6}$/.test(password);
+			if(!x2){
+                alert('您输入的密码格式不正确');
+                res += 1;
+            }
+            if(res == 0){
+                //发送请求
+                function getSend(url, cb) {
+                var xhr = new XMLHttpRequest()
+                xhr.open('GET', url)
+                xhr.onload = function () {
+                cb(xhr.responseText)
+                }
+                xhr.send()
+                }
+                getSend(`http://jx.xuzhixiang.top/ap/api/reg.php?username=${admin}&password=${password}`, function (res) {
+                console.log(JSON.parse(res));
+                })
+
+            }else{
+                alert('请按照要求格式填写账号密码');
+            }
+    }
+    let pass = document.querySelector('.pass');
+    pass.onclick = function(){
+        let admin = document.querySelector('.inp3').value;
+        let password = document.querySelector('.inp4').value;
+
+        if (!admin || !password) {
+        alert('请填写您的账号密码');
+        return
+        }
+
+
+    }
+</script>
+</html>

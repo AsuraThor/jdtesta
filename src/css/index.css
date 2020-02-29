@@ -1,0 +1,230 @@
+*{margin: 0;padding: 0;}
+.top,.head,.slide{
+    width: 1190px;
+    margin: 0 auto;
+}
+.top{
+    height: 30px;
+    background: #e3e4e5;
+    overflow: hidden;
+}
+.head{
+    height: 141px;
+    overflow: hidden;
+}
+.glyphicon-map-marker{
+    font-size: 14px;
+    color: #F10215;
+}
+.gps{
+    width: 58px;
+    height: 30px;
+}
+.top>.gps>a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #999;
+    width: 58px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+}
+.dl{
+    width: 72px;
+    height: 30px;
+}
+.top>.dl>a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #999;
+    width: 72px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+}
+.top>.dl>a:nth-child(1){
+    margin-left: 300px;
+}
+.top>.dl>a:nth-child(2){
+    margin-left: 3px;
+    color: #F10215;
+}
+.top>.dl>a:nth-child(3){
+    margin-left: 50px;
+}
+.top>.dl>a:nth-child(4){
+    margin-left: 50px;
+}
+.top>.dl>a:nth-child(5){
+    margin-left: 50px;
+}
+.top>.dl>a:nth-child(6){
+    margin-left: 50px;
+}
+.logo{
+    float: left;
+}
+.head .logo img{
+    width: 190px;
+    margin-top: 10px;
+}
+.row{
+    width: 500px;
+    height: 60px;
+    margin-left: 100px;
+    margin-top: 20px;
+    float: left;
+}
+.row>.col-lg-6{
+    width: 500px;
+}
+.row>.col-lg-6>.input-group>.form-control{
+    border-radius: 0%;
+    border: 1px solid red;
+}
+.input-group-btn>.btn-default{
+    border: 1px solid red;
+    background: red;
+    color: white;
+}
+.buy{
+    float: left;
+    margin-top: -61px;
+    margin-left: 600px;
+}
+.buy>a>.buybtn{
+    text-align: center;
+    width: 132px;
+    height: 36px;
+    background: white;
+    color: red;
+    border: 1px solid #eeeeee;
+    float: left;
+    line-height: 36px;
+}
+.head>.nav{
+    width: 750px;
+    height: 60px;
+    float: left;
+    margin-left: 40px;
+}
+.head>.nav>ul>a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.head>.nav>ul>a>li{
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 60px;
+}
+.head>.nav>ul>a>li:hover{
+    color: #c81623;
+}
+.head>.headright{
+    width: 50px;
+    float: left;
+    margin-top: -70px;
+}
+
+
+.slide{
+    height: 480px;
+    background: skyblue;
+    position: relative;
+}
+.slide>.float{
+    width:1000px;
+    height: 480px;
+    position: absolute;
+    background: rebeccapurple;
+    left: 190px;
+    display: none;
+}
+.slide>.lb{
+    width: 190px;
+    height: 480px;
+    float: left;
+}
+.slide>.lb>ul>li{
+    line-height: 30px;
+    height: 30px;
+}
+.slide>.lb>ul>li:hover{
+    background: #d9d9d9;
+}
+.slide>li:hover .float{
+    display: block;
+}
+.icon-fenzu{
+	color: #fe8301;
+}
+.icon-icon-test{
+	color: #ffb400;
+}
+.icon-jiudian{
+	color: #9b5f3d;
+}
+.icon-icon_xinyong_xianxing_jijin-{
+	color: #ffb502;
+}
+.icon--maotouying{
+	color: #ff3c02;
+}
+.icon-huoche{
+	color: #02a8f4;
+}
+.icon-maikefeng{
+	color: #01be94;
+}
+.icon-shenghuo{
+	color: #00bf96;
+}
+.icon-meifa{
+	color: #fe3f84;
+}
+.icon-zhuanshi{
+	color: #fd4080;
+}
+.icon-_qinziguanxi{
+	color: #fe4181;
+}
+.icon-yaling{
+	color: #03a8f7;
+}
+.icon-xichenqi{
+	color: #00bf96;
+}
+.icon-fenshijuan{
+	color: #00bf96;
+}
+.icon-yiyaoxiang{
+	color: #03a8f7;
+}
+.icon-gaojiaobei-{
+	color: #00c094;
+}
+.lb>ul>li{
+    list-style: none;
+    height: 30px;
+}
+.lb>ul>li>a{
+	color: black;
+	font-size: 12px;
+    color: #636363;
+    text-decoration: none;
+}
+.slide>.slideimg{
+    width: 790px;
+    height: 470px;
+    background: orange;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
