@@ -1,0 +1,223 @@
+*{margin: 0;padding: 0;}
+.box,.head,.dang,.shop,.control,.content{
+    width: 990px;
+    margin: 0 auto;
+}
+button{
+    outline: none;
+}
+.head{
+    height: 100px;
+}
+.head>img{
+    height: 100px;
+    float: left;
+}
+.head>.hy{
+    font-size: 24px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.head>.wj{
+    width: 150px;
+    height: 50px;
+    float: right;
+    font-size: 16px;
+    color: red;
+    margin-top: 45px;
+    border: none;
+    border: 1px #dfdfdf solid;
+    background: #f9f9f9;
+}
+.head>.wj:hover{
+    background: white;
+}
+.head>.wj>a{
+    text-decoration: none;
+    color: red;
+}
+.head>.wj>a>.glyphicon-shopping-cart{
+    font-size: 16px;
+    color: red;
+}
+.dang{
+    width: 100%;
+    background: #fff8f0;
+}
+.denger{
+    height: 40px;
+    background: #fff8f0;
+    margin: 0 auto;
+    line-height: 40px;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+}
+.shop{
+    height: 100px;
+    background: #efeff2;
+    border-bottom: #dddddd solid 1px;
+}
+.shop>.logo{
+    width: 180px;
+    height: 80px;
+    text-align: center;
+    float: left;
+    background: #eaeaed;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.shop>.logo>img{
+    float: left;
+    margin-top: 15px;
+    width: 150px;
+    margin-left: 15px;
+}
+.shop>span{
+    float: left;
+    font-size: 14px;
+    color: #333;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.shop>.btnright{
+    width: 90px;
+    height: 80px;
+    float: right;
+    margin-right: 10px;
+}
+.shop>.btnright>button{
+    width: 90px;
+    height: 33px;
+    margin-top: 12px;
+    border-radius: 5px;
+}
+.shop>.btnright>button>.glyphicon-heart-empty{
+    float: left;
+    font-size: 16px;
+    margin-top: 2px;
+    margin-left: 12px;
+    font-weight: normal;
+}
+.shop>.btnright>button:nth-child(1){
+    border: none;
+    border: #dddddd solid 1px;
+}
+.shop>.btnright>button:nth-child(2){
+    border: none;
+    background: #e4393c;
+    color: white;
+}
+.shop>.btnright>button:nth-child(1):hover{
+    color: #f14a4d;
+    border: #f14a4d solid 1px;
+}
+.shop>.btnright>button:nth-child(2):hover{
+    background: #f14a4d;
+}
+.control{
+    background: #f1f1f1;
+    height: 50px;
+    margin-top: 10px;
+    border-top: #dddddd solid 1px;
+    border-bottom: #dddddd solid 1px;
+}
+.control>.btnpx{
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+}
+.control>.btnpx>button{
+    border: none;
+    border: 1px #dddddd solid;
+}
+.control>.btnpx>button:nth-child(1){
+    width: 50px;
+    height: 30px;
+    background: #e4393c;
+    color: white;
+}
+.control>.btnpx>button:nth-child(1):hover{
+    background: #f14a4d;
+}
+.control>.btnpx>button:nth-child(2){
+    width: 50px;
+    height: 30px;
+    color: #999999;
+}
+.control>.btnpx>button:nth-child(2):hover{
+    border: 1px #e4393c solid;
+    color: #e4393c;
+}
+.control>.btnpx>button>.glyphicon-arrow-down{
+    font-size: 12px;
+}
+.control>marquee{
+    width: 500px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+.control>.btnfy{
+    width: 130px;
+    height: 50px;
+    float: right;
+}
+.control>.btnfy>button{
+    width: 60px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #aaaaaa;
+    background: white;
+    border: #aaaaaa solid 1px;
+}
+.control>.btnfy>button:hover{
+    background: #dfdfdf;
+}
+.content{
+    border: 1px #dddddd solid;
+    margin-top: 10px;
+    min-height: 300px;
+    overflow: hidden;
+}
+.content>.trade{
+    width: 200px;
+    height: 300px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 21px;
+    margin-right: 16px;
+}
+.content>.trade>.tradeimg{
+    width: 200px;
+    height: 200px;
+}
+.content>.trade>.tradeimg>img{
+    width: 200px;
+    height: 200px;
+}
+.content>.trade>span{
+    width: 200px;
+    height: 40px;
+    background: skyblue;
+    display: block;
+    font-size: 16px;
+    line-height: 40px;
+}
+.content>.trade>button{
+    width: 200px;
+    height: 60px;
+    font-size: 24px;
+    line-height: 40px;
+    border: 1px gray solid;
+}
+.content>.trade>button:hover{
+    border: 1px #ff0000 solid;
+    color: #ff0000;
+}

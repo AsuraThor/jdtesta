@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东商城商品列表</title>
+    <link rel="stylesheet" href="../lib/font/iconfont.css">
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/list.css">
+</head>
+<body>
+    <div class="head">
+        <img src="../images/jdlogo.jpg" />
+        <span class="hy">IKBC官方自营</span>
+        <button class="wj" src="../pages/cart.html">
+            <a href="../pages/cart.html"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+            我的购物车
+            </a>
+        </button>
+    </div>
+    <div class="dang">
+        <div class="denger">
+            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+            依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！ 新版《京东隐私政策》已上线，将更有利于保护您的个人隐私。
+        </div>
+    </div>
+    <div class="shop">
+        <div class="logo"><img src="../images/ikbc.jpg" /></div>
+        <span>ikbc京东官方自营旗舰店</span>
+        <div class="btnright">
+            <button><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>&nbsp;加关注</button>
+            <button>进入店铺</button>
+        </div>
+    </div>
+    <div class="control">
+        <div class="btnpx">
+            <button>综合<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></button>
+            <button>价格<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></button>
+        </div>
+        <marquee behavior="" direction="">欢迎来到京东网上购物商城，祝大家购物愉快！</marquee>
+        <div class="btnfy">
+            <button><</button>
+            <button>></button>
+        </div>
+    </div>
+    <div class="content">
+    </div>
+</body>
+<script>
+ function recommand(res){
+      let content = document.querySelector('.content');
+      for(var i=1;i<29;i++){
+        var img = res.data.sugGoods[0].skus[i].pictureUrl;
+        var price = res.data.sugGoods[0].skus[i].price;
+        let html ='';
+        html += `
+          <div class="trade">
+              <div class="tradeimg">
+                <img src="${img}" />
+              </div>
+              <span>售价：${price}</span>
+              <button>加入购物车</button>
+          </div>
+        `
+        content.innerHTML += html;
+      }
+  }
+</script>
+<script src="https://f.m.suning.com/api/getPcIndexProTag.do?u=&c=157390744877684124&cityCode=371&sceneIds=12-14&sceneIds2=12-14&count=100&count2=4&flag=1&channel=322&terminal=pc&callback=recommand&_=1582961988879"></script>
+</html>

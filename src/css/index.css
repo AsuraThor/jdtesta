@@ -1,7 +1,21 @@
 *{margin: 0;padding: 0;}
-.top,.head,.slide{
+body{
+    background: #f4f4f4;
+}
+.top,.head,.slide,.content{
     width: 1190px;
     margin: 0 auto;
+}
+.ttop{
+    width: 100%;
+    background:#e3e4e5;
+}
+.hhead{
+    width: 100%;
+    background: white;
+}
+button{
+    outline: none;
 }
 .top{
     height: 30px;
@@ -83,13 +97,14 @@
     width: 500px;
 }
 .row>.col-lg-6>.input-group>.form-control{
-    border-radius: 0%;
+    border-radius: 0;
     border: 1px solid red;
 }
-.input-group-btn>.btn-default{
+.input-group-btn>a>.btn-default{
     border: 1px solid red;
     background: red;
     color: white;
+    border-radius: 0;
 }
 .buy{
     float: left;
@@ -136,30 +151,33 @@
 
 .slide{
     height: 480px;
-    background: skyblue;
     position: relative;
 }
 .slide>.float{
-    width:1000px;
-    height: 480px;
+    margin-top: 10px;
+    width:800px;
+    height: 470px;
     position: absolute;
     background: rebeccapurple;
     left: 190px;
     display: none;
 }
 .slide>.lb{
+    margin-top: 10px;
     width: 190px;
-    height: 480px;
+    height: 470px;
     float: left;
+    background: #fefefe;
 }
 .slide>.lb>ul>li{
     line-height: 30px;
     height: 30px;
+    padding-left: 10px;
 }
 .slide>.lb>ul>li:hover{
     background: #d9d9d9;
 }
-.slide>li:hover .float{
+.slide>.lb>ul>li:hover .float{
     display: block;
 }
 .icon-fenzu{
@@ -221,10 +239,112 @@
     text-decoration: none;
 }
 .slide>.slideimg{
-    width: 790px;
+    width: 590px;
     height: 470px;
     background: orange;
     float: left;
     margin-left: 10px;
     margin-top: 10px;
+    position: relative;
+}
+.slideimg>.item>li{
+    list-style: none;
+    width: 590px;
+    height: 470px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.slideimg img{
+    width: 590px;
+}
+.slideimg>.leftBtn{
+    position: absolute;
+    left: 0;
+    top: 200px;
+    display: block;
+    width: 30px;
+    height: 50px;
+    opacity: 0.5;
+}
+.slideimg>.rightBtn{
+    position: absolute;
+    right: 0px;
+    top: 200px;
+    display: block;
+    width: 30px;
+    height: 50px;
+    opacity: 0.5;
+}
+.slideimg>.page{
+    position: absolute;
+    bottom: 3px;
+    left: 250px;
+}
+.slideimg>.page li{
+    float: left;
+    width: 20px;
+    height: 20px;
+    list-style: none;
+    background: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+}
+.slide>.lb6{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.slideimg>.lb6>img{
+    width: 190px;
+}
+.slide>.slideright{
+    margin-top: 10px;
+    width: 190px;
+    height: 470px;
+    float: right;
+    background: skyblue;
+}
+.content{
+    border: 1px #dddddd solid;
+    margin-top: 10px;
+    min-height: 300px;
+    overflow: hidden;
+}
+.content>.trade{
+    width: 200px;
+    height: 300px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 21px;
+    margin-right: 16px;
+}
+.content>.trade>.tradeimg{
+    width: 200px;
+    height: 200px;
+}
+.content>.trade>.tradeimg>img{
+    width: 200px;
+    height: 200px;
+}
+.content>.trade>span{
+    width: 200px;
+    height: 40px;
+    background: skyblue;
+    display: block;
+    font-size: 16px;
+    line-height: 40px;
+}
+.content>.trade>button{
+    width: 200px;
+    height: 60px;
+    font-size: 24px;
+    line-height: 40px;
+    border: 1px gray solid;
+}
+.content>.trade>button:hover{
+    border: 1px #ff0000 solid;
+    color: #ff0000;
 }

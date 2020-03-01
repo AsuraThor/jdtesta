@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-
+  <div class="ttop">
   <div class="top">
     <span class="gps">
         <a href="#">
@@ -20,7 +20,7 @@
     </span>
     <span class="dl">
         <a href="../pages/login.html">你好，请登录</a>
-        <a href="#">免费注册</a>
+        <a href="../pages/login.html">免费注册</a>
         <a href="#">我的京东</a>
         <a href="#">京东会员</a>
         <a href="#">企业直购</a>
@@ -28,7 +28,9 @@
 
     </span>
   </div>
+  </div>
 
+  <div class="hhead">
   <div class="head">
     <span class="logo">
       <img src="../images/jdlogo.jpg" />
@@ -36,9 +38,9 @@
     <div class="row">
       <div class="col-lg-6">
         <div class="input-group">
-          <input type="text" class="form-control" placeholder="婴儿推车...." style="border-right: none;">
+          <input type="text" class="form-control" placeholder="ikbc机械键盘..." style="border-right: none;">
           <span class="input-group-btn">
-            <button class="btn btn-default" type="button" style="border-left: none;">Go!</button>
+            <a href="../pages/list.html"><button class="btn btn-default" type="button" style="border-left: none;outline: none;">Go!</button></a>
           </span>
         </div><!-- /input-group -->
       </div><!-- /.col-lg-6 -->
@@ -69,37 +71,97 @@
       <img src="../images/headright.png" />
     </span>
   </div>
-
+  </div>
   <div class="slide">
     <div class="lb">
       <ul>
-        <li><span class="iconfont icon-fenzu"></span>&nbsp;<a href="">美食/家用电器</a></li>
-        <li><span class="iconfont icon-icon-test"></span>&nbsp;<a href="">外卖/啤酒/烤鸭</a></li>
-        <li><span class="iconfont icon-jiudian"></span>&nbsp;<a href="">酒店/民宿/旅游/航空</a></li>
-        <li><span class="iconfont icon-icon_xinyong_xianxing_jijin-"></span>&nbsp;<a href="">榛果民宿</a></li>
-        <li><span class="iconfont icon--maotouying"></span>&nbsp;<a href="">猫眼电影/婚纱摄影/婚宴</a></li>
-        <li><span class="iconfont icon-huoche"></span>&nbsp;<a href="">机票/火车票</a></li>
-        <li><span class="iconfont icon-maikefeng"></span>&nbsp;<a href="">休闲娱乐/KTV</a></li>
-        <li><span class="iconfont icon-shenghuo"></span>&nbsp;<a href="">生活服务</a></li>
-        <li><span class="iconfont icon-meifa"></span>&nbsp;<a href="">丽人/美发/医学美容</a></li>
-        <li><span class="iconfont icon-zhuanshi"></span>&nbsp;<a href="">结婚/婚纱摄影/婚宴</a></li>
-        <li><span class="iconfont icon-_qinziguanxi"></span>&nbsp;<a href="">亲子/儿童乐园/幼教</a></li>
-        <li><span class="iconfont icon-yaling"></span>&nbsp;<a href="">运动健身/健身中心</a></li>
-        <li><span class="iconfont icon-xichenqi"></span>&nbsp;<a href="">家装/建材/家居</a></li>
-        <li><span class="iconfont icon-fenshijuan"></span>&nbsp;<a href="">学习培训/音乐培训</a></li>
-        <li><span class="iconfont icon-yiyaoxiang"></span>&nbsp;<a href="">医疗健康/宠物/爱车</a></li>
-        <li><span class="iconfont icon-gaojiaobei-"></span>&nbsp;<a href="">酒吧/密室逃脱</a></li>
+        <li style="margin-top: 10px;"><span class="iconfont icon-icon-test"></span>&nbsp;<a href="#">外卖/啤酒/烤鸭</a></li>
+        <li><span class="iconfont icon-jiudian"></span>&nbsp;<a href="#">酒店/民宿/旅游/航空</a></li>
+        <li><span class="iconfont icon-icon_xinyong_xianxing_jijin-"></span>&nbsp;<a href="#">榛果民宿</a></li>
+        <li><span class="iconfont icon--maotouying"></span>&nbsp;<a href="#">猫眼电影/婚纱摄影/婚宴</a></li>
+        <li><span class="iconfont icon-huoche"></span>&nbsp;<a href="#">机票/火车票</a></li>
+        <li><span class="iconfont icon-maikefeng"></span>&nbsp;<a href="#">休闲娱乐/KTV</a></li>
+        <li><span class="iconfont icon-shenghuo"></span>&nbsp;<a href="#">生活服务</a></li>
+        <li><span class="iconfont icon-meifa"></span>&nbsp;<a href="#">丽人/美发/医学美容</a></li>
+        <li><span class="iconfont icon-zhuanshi"></span>&nbsp;<a href="#">结婚/婚纱摄影/婚宴</a></li>
+        <li><span class="iconfont icon-_qinziguanxi"></span>&nbsp;<a href="#">亲子/儿童乐园/幼教</a></li>
+        <li><span class="iconfont icon-yaling"></span>&nbsp;<a href="#">运动健身/健身中心</a></li>
+        <li><span class="iconfont icon-xichenqi"></span>&nbsp;<a href="#">家装/建材/家居</a></li>
+        <li><span class="iconfont icon-fenshijuan"></span>&nbsp;<a href="#">学习培训/音乐培训</a></li>
+        <li><span class="iconfont icon-yiyaoxiang"></span>&nbsp;<a href="#">医疗健康/宠物/爱车</a></li>
+        <li><span class="iconfont icon-gaojiaobei-"></span>&nbsp;<a href="#">酒吧/密室逃脱</a></li>
       </ul>
     </div>
     <div class="slideimg">
+      <ul class="item">
+				<li style="opacity: 1"><img src="../images/lb1.png"></li>
+				<li style="opacity: 0"><img src="../images/lb2.png"></li>
+				<li><img src="../images/lb3.png"></li>
+				<li><img src="../images/lb4.png"></li>
+				<li><img src="../images/lb5.png"></li>
+			</ul>
+			<button class="leftBtn">&lt;</button>
+			<button class="rightBtn">&gt;</button>
+			<ul class="page">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+      </ul>
     </div>
-    <div class="float">
-      
+    <div class="lb6">
+      <img src="../images/lb6.png" />
+    </div>
+    <div class="float">1</div>
+    <div class="float">2</div>
+    <div class="float">3</div>
+    <div class="float">4</div>
+    <div class="float">5</div>
+    <div class="float">6</div>
+    <div class="float">7</div>
+    <div class="float">8</div>
+    <div class="float">9</div>
+    <div class="float">10</div>
+    <div class="float">11</div>
+    <div class="float">12</div>
+    <div class="float">13</div>
+    <div class="float">14</div>
+    <div class="float">15</div>
+
+    <div class="slideright">
+
     </div>
   </div>
-
-
+  <div class="content">
+  </div>
 </body>
+<script>
+
+  function recommand(res){
+      let content = document.querySelector('.content');
+      for(var i=1;i<26;i++){
+        var img = res.data.sugGoods[0].skus[i].pictureUrl;
+        var price = res.data.sugGoods[0].skus[i].price;
+        let html ='';
+        html += `
+          <div class="trade">
+              <div class="tradeimg">
+                <img src="${img}" />
+              </div>
+              <span>售价：${price}</span>
+              <button>加入购物车</button>
+          </div>
+        `
+        content.innerHTML += html;
+      }
+  }
+
+</script>
+<script src="https://f.m.suning.com/api/getPcIndexProTag.do?u=&c=157390744877684124&cityCode=371&sceneIds=12-14&sceneIds2=12-14&count=100&count2=4&flag=1&channel=322&terminal=pc&callback=recommand&_=1582961988879"></script>
 <script src="../lib/jquery/dist/jquery.min.js"></script>
 <script src="../js/index.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/animateBak.js"></script>
+<script src="../js/lb.js"></script>
 </html>
